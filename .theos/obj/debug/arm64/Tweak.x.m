@@ -1,37 +1,33 @@
 #line 1 "Tweak.x"
-
+#import <libactivator.h>
 #import <UIKit/UIKit.h>
+#import <UIKit/UIView.h>
 #import <CoreGraphics/CGGeometry.h>
 BOOL toggle = NO;
-UIView* view;
+UIView *view;
+
+@interface FakeShutoff : NSObject <LAListener>
+@end
+
+@implementation FakeShutoff
 
 
 
 
 
+- (void)activator: (LAActivator *)activator receiveEvent:(LAEvent *)event forListenerName:(NSString *)listenerName {
+    toggle = !toggle;
 
+  }
 
+@end
 
+static FakeShutoff *fakeShutoffInstance;
 
-
-
-
-
-
-
-
-
-
-
-static __attribute__((constructor)) void _logosLocalCtor_83d94dac(int __unused argc, char __unused **argv, char __unused **envp){
+static __attribute__((constructor)) void _logosLocalCtor_1477b421(int __unused argc, char __unused **argv, char __unused **envp){
     
     
     
-    view = [[UIView alloc] initWithFrame:CGRectMake(0,
-                                                                0,
-                                                                [[UIScreen mainScreen] bounds].size.width,
-                                                                [[UIScreen mainScreen] bounds].size.height)];
-    [view setBackgroundColor:[UIColor blackColor]];
-    view.userInteractionEnabled = YES;
-    view.alpha = 1;
+
+
 }

@@ -1,9 +1,10 @@
-//#import <libactivator.h>
+#import <libactivator.h>
 #import <UIKit/UIKit.h>
+#import <UIKit/UIView.h>
 #import <CoreGraphics/CGGeometry.h>
 BOOL toggle = NO;
-UIView* view;
-/*
+UIView *view;
+
 @interface FakeShutoff : NSObject <LAListener>
 @end
 
@@ -21,16 +22,11 @@ UIView* view;
 @end
 
 static FakeShutoff *fakeShutoffInstance;
-*/
+
 %ctor{
     //fakeShutoffInstance = [[FakeShutoff alloc] init];
     //[[LAActivator sharedInstance] registerListener:fakeShutoffInstance
     //                                       forName:@"FakeShutoff"];
-    view = [[UIView alloc] initWithFrame:CGRectMake(0,
-                                                                0,
-                                                                [[UIScreen mainScreen] bounds].size.width,
-                                                                [[UIScreen mainScreen] bounds].size.height)];
-    [view setBackgroundColor:[UIColor blackColor]];
-    view.userInteractionEnabled = YES;
-    view.alpha = 1;
+
+
 }

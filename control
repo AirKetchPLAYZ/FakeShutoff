@@ -1,7 +1,7 @@
-Package: com.github.airketchplayz.FakeShutoff
+Package: com.github.airketchplayz.fakeshutoff
 Name: FakeShutoff
-Depends: mobilesubstrate, libactivator (>= 1.8.3)
-Version: 1.0
+Depends: mobilesubstrate
+Version: 0.0.1
 Architecture: iphoneos-arm
 Description: An awesome MobileSubstrate tweak!
 Maintainer: Yoshi Chill
