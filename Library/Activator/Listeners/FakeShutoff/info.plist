@@ -1,0 +1,4 @@
+{
+    title = "Toggle FakeShutoff";
+    description = "Pretends phone is powered off";
+}
