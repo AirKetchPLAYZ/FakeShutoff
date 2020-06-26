@@ -1,0 +1,14 @@
+name: FakeShutoff
+icmd: sbreload
+
+all:
+  targetvers: 13.0
+  archs:
+    - arm64
+    - arm64e
+
+FakeShutoff:
+    type: tweak
+
+    logos_files:
+        - "*.xm"

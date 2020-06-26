@@ -1,0 +1,5 @@
+cmd: dragon make
+name: Package using dragonbuild
+targets:
+  "Package and install using dragonbuild":
+    cmd: dragon do
