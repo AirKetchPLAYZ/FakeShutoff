@@ -1,5 +1,5 @@
-cmd: dragon make
-name: Package using dragonbuild
+cmd: make package
+name: Package using theos
 targets:
-  "Package and install using dragonbuild":
-    cmd: dragon do
+  "Package and install using theos":
+    cmd: make do
